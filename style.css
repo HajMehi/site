@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg:#070b12;--text:#edf4ff;--muted:#91a3bb;--blue:#258bff;--border:rgba(100,153,213,.2)}
+*{box-sizing:border-box}html{min-height:100%}
+body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--text);background:radial-gradient(ellipse at 75% 25%,#0a1b31 0%,transparent 42%),var(--bg);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+#background{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.container{position:relative;z-index:1;width:min(100% - 40px,820px);margin:0 auto;padding:14vh 0 70px}
+.intro{max-width:630px}.status{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;color:#b9cce2;background:rgba(7,15,26,.7);font-size:11px}
+.status i{width:7px;height:7px;border-radius:50%;background:#40d99a;box-shadow:0 0 12px #40d99a}
+.hello,.section-label{color:#48a4ff;font-size:11px;letter-spacing:.25em;font-weight:700}.hello{margin:34px 0 9px}
+h1{margin:0;font-size:clamp(48px,9vw,76px);letter-spacing:-.065em;line-height:1.02;font-weight:800}h1 span{color:var(--blue)}
+h2{margin:16px 0 0;font-size:clamp(17px,3vw,21px);font-weight:500;letter-spacing:.08em;color:#b9cce2}
+.description{max-width:530px;margin:20px 0 23px;color:var(--muted);font-size:14px;line-height:1.85}.description strong{color:#dceaff;font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:10px}.links a{display:inline-flex;align-items:center;gap:15px;padding:11px 15px;color:#e4efff;text-decoration:none;font-size:12px;background:rgba(10,23,39,.75);border:1px solid var(--border);border-radius:9px;transition:.2s ease}.links a span{color:var(--blue)}.links a:hover{border-color:var(--blue);transform:translateY(-2px)}
+.skills{margin-top:64px;border-top:1px solid rgba(110,157,211,.14);padding-top:25px}.section-label{margin:0 0 23px}
+.group{margin-top:20px}.group h3{color:#9db1c9;font-size:12px;font-weight:500;letter-spacing:.12em;margin:0 0 10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{color:#c9d8eb;font-size:12px;padding:10px 13px;border-radius:8px;background:linear-gradient(135deg,rgba(15,29,47,.82),rgba(7,15,25,.86));border:1px solid var(--border);transition:.2s}.tags span:hover{color:white;border-color:rgba(37,139,255,.7)}
+@media(max-width:540px){.container{width:min(100% - 32px,820px);padding-top:11vh}.skills{margin-top:48px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
